@@ -1,0 +1,23 @@
+﻿{
+  "project_id": "PROJECT-B",
+  "task_id": "PROJECT-B-MVP-001",
+  "objective": "Evaluate a generic software change request and determine whether implementation should proceed.",
+  "findings": [
+    {
+      "finding_id": "B-001",
+      "classification": "CONFLICT",
+      "finding_type": "SPECIFICATION_PROBLEM",
+      "summary": "Requirement states two different behaviors for the same feature.",
+      "evidence": [
+        "REQ-A: feature should be optional",
+        "REQ-B: feature is described as mandatory"
+      ],
+      "confidence": "HIGH"
+    }
+  ],
+  "human_decisions_required": [
+    {
+      "decision": "Choose the intended requirement before implementation."
+    }
+  ]
+}

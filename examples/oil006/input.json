@@ -1,0 +1,43 @@
+﻿{
+  "project_id": "OIL006",
+  "task_id": "OIL006-MVP-001",
+  "objective": "Evaluate API specification compliance and determine whether implementation changes should be considered.",
+  "findings": [
+    {
+      "finding_id": "F-001",
+      "classification": "UNKNOWN",
+      "finding_type": "DATA_PROBLEM",
+      "summary": "Mandatory-field violation cannot be confirmed from the available failed-request evidence.",
+      "evidence": [
+        "SPEC: ProductOrMaterialCode is mandatory"
+      ],
+      "confidence": "LOW"
+    },
+    {
+      "finding_id": "F-002",
+      "classification": "CONFLICT",
+      "finding_type": "CONTRACT_CONFLICT",
+      "summary": "CtrlTypeToList is marked mandatory while the observed example omits it.",
+      "evidence": [
+        "SPEC: CtrlTypeToList is mandatory",
+        "EXAMPLE: CtrlTypeTo=3 request does not include CtrlTypeToList"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "finding_id": "F-003",
+      "classification": "UNKNOWN",
+      "finding_type": "VALIDATION_GAP",
+      "summary": "TankList/MeterList implementation enforcement is not independently verified.",
+      "evidence": [
+        "SPEC: one of TankList or MeterList should be supplied"
+      ],
+      "confidence": "LOW"
+    }
+  ],
+  "human_decisions_required": [
+    {
+      "decision": "Decide how the CtrlTypeToList specification/example conflict should be handled."
+    }
+  ]
+}
