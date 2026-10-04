@@ -158,3 +158,26 @@ Ball remains the final decision maker for:
 - Conflicting requirements
 - Insufficient evidence
 - Repeated AI failure
+
+## Session Continuity
+
+AI Nexora now treats session continuity as a persistent operating rule.
+
+Before a work session, milestone, or machine handoff is considered complete, the AI Co-CEO must verify:
+- completed work
+- evidence
+- unresolved work
+- decisions
+- human decisions required
+- current state
+- important lessons
+- documentation persistence
+- Git state
+- remote persistence when appropriate
+
+The purpose is to make project continuity independent of conversational memory.
+
+Migration entry point:
+- `PROJECT-INSTRUCTIONS.md`
+- `docs/co-ceo/CURRENT-STATE.md`
+- `docs/co-ceo/history/BUILD-DIARY.md`

@@ -1708,3 +1708,31 @@ Real Project Pilot #1.
 CURRENT-STATE.md is now the persistent recovery point for machine migration.
 
 Git commit and push remain pending human approval.
+
+## Session Continuity Operating Rule
+
+AI Nexora established a persistent End-of-Work Protocol.
+
+Reason:
+Conversation is temporary and cannot be the primary continuity mechanism.
+
+Decision:
+Project continuity must be encoded in persistent project artifacts and Git.
+
+Required behavior:
+- verify work with evidence
+- update current state
+- record important decisions
+- record unresolved items
+- verify Git state
+- prepare machine handoff when required
+
+This prevents the project from depending on Ball remembering a daily checklist.
+
+Status:
+IMPLEMENTED
+
+Evidence:
+- PROJECT-INSTRUCTIONS.md
+- CURRENT-STATE.md
+- BUILD-DIARY.md
